@@ -1,5 +1,5 @@
 #secBlossom {
-    background: pink;
+    background: rgb(249, 205, 212);
     width: 100vw;
     height: 100vh;
 }
@@ -15,7 +15,7 @@
     visibility: hidden;
     margin: 0 auto;
     overflow: hidden;
-    background: #0fb8ad;
+    background: rgb(249, 205, 212);
     /*     background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.3), rgba(14, 135, 113, 0.9)), rgb(15, 184, 173); */
     background-size: cover;
     background-position: center;

@@ -1,4 +1,6 @@
 const btnStart = document.getElementById('btnStart');
+const eggSection = document.getElementById('eggSection');
+const scrollSections = document.querySelectorAll('#secButterfly, #secBlossom');
 
 btnStart.addEventListener('click', () => {
     btnStartHandler();
@@ -13,6 +15,8 @@ const btnStartHandler = (event) => {
     setTimeout(() => {
         btnStart.style.left = "10px"
         btnStart.style.bottom = "10px"
+        btnStart.style.width = "150px"
+        btnStart.style.height = "150px"
     }, 1500);
 
     const audio = new Audio('assets/hbd-tuyu.mp3');
@@ -24,6 +28,12 @@ const btnStartHandler = (event) => {
         .add(mainSetUp)
         .add(branchMaster);
 
+    // after 30 seconds, scroll out the butterfly/blossom frame and reveal egg section
+    setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        scrollSections.forEach(section => section.classList.add('out-of-frame'));
+        eggSection.classList.add('visible');
+    }, 30000);
 }
 
 

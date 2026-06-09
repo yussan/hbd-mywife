@@ -1,14 +1,18 @@
-/**
-* MIXINS
-*/
-/* SYMBOLS */
 
-/* Circle Button Styles */
 body {
+  font-family: "Magallanes Cond W00 Black";
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+#eggSection {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(249, 205, 212);
+    bottom: -100vh;
+    position: absolute;
 }

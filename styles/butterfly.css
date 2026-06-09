@@ -1,8 +1,8 @@
 
 .circle-btn {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: linear-gradient(135deg, #ef4da0, #f74a8d);
   border: 10px solid white;
