@@ -35,7 +35,7 @@ const btnStartHandler = (event) => {
         .add(mainSetUp)
         .add(branchMaster);
 
-    // after 6 seconds, scroll out the butterfly/blossom frame and reveal egg section
+    // after 6 seconds, scroll out the butterfly/blossom frame and reveal jellyfish section
     setTimeout(() => {
         // Play transition sound effectively ~130-150% louder by overlapping audio instances
         const transitionSound1 = new Audio('assets/spongebob-bubble-transition.mp3');

@@ -127,6 +127,10 @@ for (let i = 0; i < objects.length; i++) {
         bday.innerHTML += text[hits] != undefined ? text[hits] : '';
         hits++;
 
+        if (hits >= text.length) {
+            TweenMax.to('#img-my-wife', 2, { opacity: 1, ease: Power2.easeInOut });
+        }
+
         // Play bubble sound effect effectively louder (~130%)
         const popSound1 = new Audio('assets/spongebob-bubble-transition.mp3');
         const popSound2 = new Audio('assets/spongebob-bubble-transition.mp3');
@@ -153,7 +157,7 @@ class Bubble {
 
 
 /* start Hidden, you can’t read this */
-const text = ["H","B","D", " ","MY WIFE", "❤️"];
+const text = ["H","B","D", " ","MY WIFE", " ❤️"];
 /* end Hidden */
 
 /******************************/
